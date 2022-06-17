@@ -4,8 +4,6 @@ Nakon pokretanja servera Kubernetes klasteru potrebno je promeniti IP adresu u s
 
 ili
 
-izvršiti sledeću naredbu u konzoli
+izvršiti sledeću naredbu u konzoli kako biste poslali request serverskoj aplikaciji
 
 curl -X POST -H "Content-type: application/json" --data "{\"ime\": \"Ena\",\"prezime\": \"Sotirovic\",\"username\": \"esotirovic15\",\"smer\": \"RAF\",\"predmeti\": [{\"ime\": \"RISO\",\"espb\": 6},{\"ime\": \"MTZPP\",\"espb\": 6}]}" http://localhost:8081/users
-
-Umesto adrese **localhost** upisati IP adresu servisa
