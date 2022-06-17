@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: server-app
+  labels:
+    name: server-app
+    app: server-app
+spec:
+      containers:
+      - name: webservice
+        image: esotirovic/webservice
+        ports:
+        - containerPort: 8081
+
